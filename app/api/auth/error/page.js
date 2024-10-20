@@ -1,7 +1,7 @@
 // app/auth/error/page.js
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect,Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
