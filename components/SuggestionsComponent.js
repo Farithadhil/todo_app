@@ -69,7 +69,7 @@ const SuggestionsComponent = ({ onSuggestionClick }) => {
           cursor: pointer;
           transition: background-color 0.3s ease;
           white-space: nowrap;
-          // width: 110px;
+          
           text-align: center;
         }
         .suggestion-item:hover {
