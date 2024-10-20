@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/NotoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-color-light: #ffffff;
+  --text-color-light: #000000;
+  --bg-color-dark: #333333;
+  --text-color-dark: #ffffff;
+}
+
+.light {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+.dark {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+ 
+  }
+}
+
+body {
+
+  font-family: 'Noto Sans',Helvetica,sans-serif,Arial;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
